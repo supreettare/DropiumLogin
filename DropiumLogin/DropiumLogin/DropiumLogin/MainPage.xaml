@@ -2,17 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DropiumLogin"
-             x:Class="DropiumLogin.MainPage" BackgroundColor="#323c4d">
+             x:Class="DropiumLogin.MainPage" BackgroundColor="#323c4d"
+             xmlns:effects="clr-namespace:DropiumLogin.Effects"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss">
 
+  <xfg:ContentPageGloss.BackgroundGradient>
+    <xfg:Gradient Rotation="150">
+      <xfg:GradientStep StepColor="#434d5e" StepPercentage="0" />
+      <xfg:GradientStep StepColor="#343f4f" StepPercentage=".5" />
+      <xfg:GradientStep StepColor="#323c4d" StepPercentage="1" />
+    </xfg:Gradient>
+  </xfg:ContentPageGloss.BackgroundGradient>
+  
   <ScrollView>
-  	<StackLayout Margin="30" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30">
-  		<BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="#58c7e8" HorizontalOptions="Center"/>
-		<Label Text="DROPIUM" TextColor="#838ea4" FontSize="20" HorizontalOptions="Center"/>
-		<Entry BackgroundColor="White" Placeholder="Username" PlaceholderColor="#b9c3d4" WidthRequest="300" HeightRequest="40"/>	
-		<Entry BackgroundColor="White" Placeholder="*******" PlaceholderColor="#b9c3d4" WidthRequest="300" HeightRequest="40"/>	
-		<Button Text="Log In" BackgroundColor="#62cfc3" HorizontalOptions="Fill" TextColor="White" />
-		<Button Text="Forgot your password?" HorizontalOptions="Fill" TextColor="#838ea4" FontSize="20" Margin="0, -15, 0, 0"/>
-		</StackLayout>
-</ScrollView>
+    <StackLayout Margin="30" VerticalOptions="Center" HorizontalOptions="Center" Spacing="30">
+      <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="#58c7e8" HorizontalOptions="Center"/>
+      <Label Text="DROPIUM" TextColor="#838ea4" FontSize="20" HorizontalOptions="Center"/>
+      <Entry BackgroundColor="White" Placeholder="Username" PlaceholderColor="#b9c3d4" WidthRequest="300" HeightRequest="40" FontSize="20" TextColor="#838ea4"/>
+      <Entry BackgroundColor="White" Placeholder="*******" PlaceholderColor="#b9c3d4" WidthRequest="300" HeightRequest="40"  FontSize="20" TextColor="#838ea4"/>
+      <Button Text="Log In" BackgroundColor="#62cfc3" HorizontalOptions="Fill" TextColor="White"/>
+      <Button Text="Forgot your password?" HorizontalOptions="Fill" TextColor="#838ea4" FontSize="20" Margin="0, -15, 0, 0"/>
+    </StackLayout>
+  </ScrollView>
 
 </ContentPage>

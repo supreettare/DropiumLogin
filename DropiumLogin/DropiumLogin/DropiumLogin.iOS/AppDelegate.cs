@@ -23,6 +23,7 @@ namespace DropiumLogin.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            XFGloss.iOS.Library.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
