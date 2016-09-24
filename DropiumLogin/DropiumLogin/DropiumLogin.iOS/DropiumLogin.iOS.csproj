@@ -24,7 +24,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386, x86_64</MtouchArch>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -139,7 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DropiumLogin\DropiumLogin.csproj">
-      <Project>{1d689409-005d-4e43-9497-b779c96a5b8a}</Project>
+      <Project>{2C1F696C-8F55-4360-AB9B-817016091906}</Project>
       <Name>DropiumLogin</Name>
     </ProjectReference>
   </ItemGroup>
